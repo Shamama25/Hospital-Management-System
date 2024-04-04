@@ -1,0 +1,215 @@
+*::selection {
+  background-color: var(--sub-color);
+  color: var(--main-color);
+}
+
+*::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--sub-color);
+  border-radius: 5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #ffffff;
+  --sub-color: #1212f0;
+  --white: #68694d;
+  --border: 0.1rem solid rgba(105, 94, 74, 0.3);
+}
+
+body {
+  background-color: rgb(245, 243, 243);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.speciality {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 1.5rem;
+}
+
+.speciality h1 {
+  border-bottom: 5px solid black;
+  text-transform: capitalize;
+  padding-bottom: 0.25rem;
+}
+.grid {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  grid-template-rows: 370px 370px 370px 370px;
+  grid-gap: 160px 10px;
+}
+
+.doctor {
+  padding: 20px;
+  font-size: 1.7rem;
+}
+
+.b1 {
+  border-radius: 10rem;
+  background-image: url("..//pics/d1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.b2 {
+  border-bottom: 2px solid grey;
+}
+
+.b3 {
+  border-radius: 10rem;
+  background-image: url("..//pics/d2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.b4 {
+  border-bottom: 2px solid grey;
+}
+.b5 {
+  border-radius: 10rem;
+  background-image: url("..//pics/d3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.b6 {
+  border-bottom: 2px solid grey;
+}
+
+.b7 {
+  border-radius: 10rem;
+  background-image: url("..//pics/d5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.b8 {
+  border-bottom: 2px solid grey;
+}
+
+.text {
+  text-align: justify;
+}
+
+.text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.text h3 {
+  font-size: 1.25rem;
+}
+
+.text .stars {
+  color: orange;
+  font-size: 1.2rem;
+}
+
+.text p {
+  font-size: 1rem;
+  padding: 15px;
+}
+
+.text .appointment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text .appointment h3 {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 0.5rem 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  color: var(--sub-color);
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  margin-top: 1rem;
+  background-color: rgb(19, 154, 244);
+  color: var(--main-color);
+  border-radius: 0.625rem;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.btn:hover {
+  background-color: var(--sub-color);
+  color: var(--main-color);
+}
+
+/* breadcrumb css */
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.breadcrumb_item:not(:last-of-type)::after {
+  content: "\203a";
+  margin-left: 0 10px;
+  color: #ccc;
+  font-size: 20px;
+}
+
+.breadcrumb_link {
+  text-decoration: none;
+  background-color: transparent;
+  color: #333;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+
+.breadcrumb_link:hover {
+  color: blue;
+  transition: all 0.3s ease-in-out;
+}
+
+.breadcrumb_link_active {
+  color: blue;
+}
+
+.breadcrumb_link_active:hover {
+  color: #656565;
+  transition: all 0.3s ease-in-out;
+}

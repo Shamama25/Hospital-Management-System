@@ -1,0 +1,86 @@
+body {
+    background-color: white;
+}
+
+.container {
+    max-width: 1080px;
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+
+.add {
+    margin-right: 55rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #0d6efd;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #085AD6;
+    color: white;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-del {
+    background-color: #F00808;
+    padding: 8px;
+    border: none;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-del:hover {
+    background-color: #DE0A0A;
+    color: white;
+}
+
+.btn-del a {
+    text-decoration: none;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+.fa-key {
+    font-size: 1.5rem;
+}
+
+.pk {
+    color: #FFD700;
+}
+
+.fk {
+    color: #C0C0C0;
+}

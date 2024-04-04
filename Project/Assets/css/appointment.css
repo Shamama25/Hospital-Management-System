@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
+
+/* vanilla css */
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+*::selection {
+  background-color: var(--sub-color);
+  color: var(--main-color);
+}
+
+*::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--sub-color);
+  border-radius: 5rem;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+body {
+  min-height: 140vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #cbe6ef;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.appointment {
+  position: relative;
+  max-width: 900px;
+  border-radius: 6px;
+  padding: 30px;
+  margin: 0 15px;
+  background-color: #fff;
+  box-shadow: 6px 5px 20px 6px rgba(0, 0, 0, 0.1);
+}
+
+.appointment header {
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  color: #434339;
+}
+
+.appointment header span {
+  border-bottom: 3px solid #1212f0;
+  padding-bottom: 0.5rem;
+}
+
+.appointment form {
+  position: relative;
+  margin-top: 26px;
+  min-height: 480px;
+  background-color: #fff;
+}
+
+.appointment form .details {
+  margin-top: 30px;
+}
+
+.appointment form .title {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 12px;
+  margin: 6px 0;
+  color: #333;
+}
+
+.appointment form .input-fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+form .input-fields .box {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 4px 0;
+}
+
+.box select .input {
+  width: 400px;
+}
+
+.box label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.box input {
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 0 15px;
+  height: 32px;
+}
+
+input[type="submit"] {
+  background-color: #005583;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  width: 250px;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}

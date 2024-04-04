@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;800 &family=Mulish:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font: "Mulish", sans-serif;
+    --btn-font: "Montserrat", sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    font-family: var(--font);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    padding: 3rem;
+}
+.container {
+    border-radius: 0.625rem;
+    box-shadow: 5px 6px 20px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+}
+.header {
+    background-color: #0d6efd;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 6px;
+}
+.header h2 {
+    font-family: var(--btn-font);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.form {
+    padding: 40px 0;
+}
+.form-handle {
+    margin-bottom: 40px;
+    position: relative;
+}
+.form-handle label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #353535;
+    text-transform: capitalize;
+}
+.form-handle input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: block;
+    font-family: var(--font);
+    font-size: 15px;
+    padding: 12px;
+}
+
+.form-handle::placeholder {
+    color: #777;
+}
+
+.form-handle select {
+    color: #777;
+}
+
+.form-handle select {
+    text-transform: capitalize;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: block;
+    font-family: var(--font);
+    font-size: 15px;
+    padding: 12px;
+}
+option {
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.form-handle input:focus {
+    outline: 0;
+    border-color: #777;
+}
+.form-handle.success input {
+    border-color: #2ecc71;
+}
+.form-handle.error input {
+    border-color: #e74c3c;
+}
+.form-handle.success select {
+    border-color: #2ecc71;
+}
+.form-handle.error select {
+    border-color: #e74c3c;
+}
+.form-handle i {
+    position: absolute;
+    right: 24px;
+    top: 38px;
+    visibility: hidden;
+}
+.form-handle small {
+    color: #e74c3c;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+.form-handle.error small {
+    visibility: visible;
+}
+.form-handle.success i.fa-circle-check {
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-handle.error i.fa-circle-exclamation {
+    color: #e74c3c;
+    visibility: visible;
+}
+.form .btn {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    display: block;
+    font-family: var(--btn-font);
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.form .btn:hover {
+    background-color: rgb(50, 179, 239);
+}
+
+::placeholder {
+    text-transform: capitalize;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
